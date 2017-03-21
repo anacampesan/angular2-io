@@ -6,6 +6,8 @@ import { ChildComponent } from './child/child.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  messageFromParent: string = 'message from parent component';
+
   toggle: boolean = true;
 
   onNotifyClicked(toggle: boolean) {

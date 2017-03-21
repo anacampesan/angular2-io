@@ -7,6 +7,8 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 })
 
 export class ChildComponent implements OnInit {
+  @Input() messageFromParent: string;
+
   @Output() toggle = new EventEmitter<boolean>();
   toggleVar: boolean = true;
 
