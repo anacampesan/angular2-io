@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<h3>click the button to toggle the message</h3>
+
+<app-child (toggle)="onNotifyClicked($event)"></app-child>
+
+<p *ngIf="toggle">The Toggle var is <strong>True</strong></p>
